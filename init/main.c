@@ -24,6 +24,7 @@ static inline _syscall0(int,sync)
 #include <linux/head.h>
 #include <asm/system.h>
 #include <asm/io.h>
+#include <linux/kernel.h>
 
 #include <stddef.h>
 #include <stdarg.h>
@@ -143,5 +144,6 @@ void init(void)
 	j=wait(&i);
 	printf("child %d died with code %04x\n",j,i);
 	sync();
+	
 	_exit(0);	/* NOTE! _exit, not exit() */
 }
