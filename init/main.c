@@ -94,6 +94,7 @@ void main(void)		/* This really IS void, no error here. */
 	if (!fork()) {		/* we count on this going ok */
 		init();
 	}
+	printf("Hi!");
 /*
  *   NOTE!!   For any other task 'pause()' would mean we have to get a
  * signal to awaken, but task0 is the sole exception (see 'schedule()')
