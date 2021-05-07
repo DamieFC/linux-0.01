@@ -237,13 +237,13 @@ key_map:
 
 shift_map:
 	.byte 0,27
-	.ascii "!\"#$%&/()=?`"
+	.ascii "`1234567890-="
 	.byte 127,9
-	.ascii "QWERTYUIOP]^"
+	.ascii "QWERTYUIOP[]\\"
 	.byte 10,0
-	.ascii "ASDFGHJKL\\["
+	.ascii "ASDFGHJKL:\""
 	.byte 0,0
-	.ascii "*ZXCVBNM;:_"
+	.ascii "ZXCVBNM<>?"
 	.byte 0,'*,0,32		/* 36-39 */
 	.fill 16,1,0		/* 3A-49 */
 	.byte '-,0,0,0,'+	/* 4A-4E */
